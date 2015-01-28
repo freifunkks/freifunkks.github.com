@@ -11,6 +11,9 @@ author:
 exclude: ["CNAME"]
 highlighter: pygments
 markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: :compressed
 
 # Globals
 production_url: http://www.ffks.de
