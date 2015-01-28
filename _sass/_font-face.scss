@@ -1,0 +1,67 @@
+@font-face {
+  font: {
+    family: "OpenSans";
+    weight: 300;
+    stretch: condensed;
+  }
+
+  src: url("/fonts/OpenSans-CondLight.woff");
+}
+
+@font-face {
+  font: {
+    family: "OpenSans";
+    weight: 300;
+    stretch: condensed;
+    style: italic;
+  }
+
+  src: url("/fonts/OpenSans-CondLightItalic.woff");
+}
+
+@font-face {
+  font: {
+    family: "OpenSans";
+    weight: 400;
+    style: italic;
+  }
+
+  src: url("/fonts/OpenSans-Italic.woff");
+}
+
+@font-face {
+  font: {
+    family: "OpenSans";
+    weight: 300;
+  }
+
+  src: url("/fonts/OpenSans-Light.woff");
+}
+
+@font-face {
+  font: {
+    family: "OpenSans";
+    weight: 300;
+    style: italic;
+  }
+
+  src: url("/fonts/OpenSans-LightItalic.woff");
+}
+
+@font-face {
+  font: {
+    family: "OpenSans";
+    weight: 400;
+  }
+
+  src: url("/fonts/OpenSans-Regular.woff");
+}
+
+@font-face {
+  font: {
+    family: "OpenSans";
+    weight: 600;
+  }
+
+  src: url("/fonts/OpenSans-Semibold.woff");
+}
