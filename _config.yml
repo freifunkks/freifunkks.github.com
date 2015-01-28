@@ -1,0 +1,15 @@
+# Site settings
+title: Freifunk Kassel
+tagline: Das freie Bürgernetz in Kassel
+author:
+  name: Freifunk Kassel
+  email: ffks@s01.de
+  github: freifunkks
+  twitter: freifunkks
+
+# Build settings
+highlighter: pygments
+markdown: kramdown
+
+# Globals
+production_url: http://www.ffks.de
