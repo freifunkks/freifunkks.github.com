@@ -17,7 +17,7 @@ permalink: /news/
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
 
-        <p>{{ post.excerpt }}</p>
+        <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
       </li>
     {% endfor %}
   </ul>
@@ -29,7 +29,7 @@ permalink: /news/
     {% else %}
       <span class="previous">Neuere News</span>
     {% endif %}
-    <span class="page_number">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span>
+    <span class="page-number">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path }}" class="next">Next</a>
     {% else %}
