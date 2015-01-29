@@ -5,8 +5,6 @@ tagline: "Freifunk Kassel stellt sich vor"
 tags : [Kassel, Freifunk]
 ---
 
-## Willkommen bei Freifunk Kassel!
-
 Wir sind ein Verbund von Menschen, die zusammen ein Bürgernetz in Kassel aufbauen
 wollen.
 
