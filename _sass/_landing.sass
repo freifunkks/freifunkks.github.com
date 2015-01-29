@@ -1,0 +1,49 @@
+.start
+  .line
+    display: -webkit-flex
+    display: flex
+    -webkit-flex-direction: row
+    -webkit-flex-wrap: no-wrap
+    flex-direction: row
+    flex-wrap: no-wrap
+
+    div
+      margin: 0 8px
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
+
+    .video
+      background: #ddd
+      height: 300px
+      -webkit-flex-grow: 1
+      -webkit-order: 1
+      flex-grow: 1
+      order: 1
+
+    .map
+      background: #ddd
+      height: 300px
+      -webkit-flex-grow: 1
+      -webkit-order: 2
+      flex-grow: 1
+      order: 2
+
+    .learn
+      -webkit-flex-grow: 1
+      -webkit-order: 1
+      flex-grow: 1
+      order: 1
+
+    .connect
+      -webkit-flex-grow: 1
+      -webkit-order: 2
+      flex-grow: 1
+      order: 2
+
+    .contribute
+      -webkit-flex-grow: 1
+      -webkit-order: 3
+      flex-grow: 1
+      order: 3

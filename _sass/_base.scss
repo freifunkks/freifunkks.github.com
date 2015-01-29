@@ -4,6 +4,10 @@ $content-width: 960px;
 /**
 * Basic styling
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font: {
     family: $base-font-family;
