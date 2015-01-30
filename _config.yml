@@ -8,6 +8,8 @@ author:
   twitter: freifunkks
 
 nav_pages:
+  - title: Info
+    url: /info/
   - title: News
     url: /news/
   - title: Karte
