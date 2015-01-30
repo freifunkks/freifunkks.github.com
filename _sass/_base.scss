@@ -1,10 +1,10 @@
 $brand-color: rgb(222, 44, 104);
 $content-width: 960px;
 
-/**
-* Basic styling
-*/
-* {
+/* border-box fix */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -18,17 +18,13 @@ body {
   background-color: $background-color;
 }
 
-/**
-* Images
-*/
+/* Images */
 img {
   max-width: 100%;
   vertical-align: middle;
 }
 
-/**
-* Figures
-*/
+/* Figures */
 figure > img {
   display: block;
 }
@@ -37,9 +33,7 @@ figcaption {
   font-size: $small-font-size;
 }
 
-/**
-* Links
-*/
+/* Links */
 a {
   color: $brand-color;
   text-decoration: none;
@@ -54,9 +48,7 @@ a {
   }
 }
 
-/**
-* Blockquotes
-*/
+/* Blockquotes */
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
@@ -70,9 +62,7 @@ blockquote {
   }
 }
 
-/**
-* Code formatting
-*/
+/* Code formatting */
 pre,
 code {
   font-size: 15px;
@@ -100,11 +90,8 @@ iframe {
   border: none;
 }
 
-/**
-* Wrapper
-*/
+/* Wrapper */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
@@ -112,25 +99,8 @@ iframe {
   padding-left: $spacing-unit;
 
   @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
-  }
-}
-
-/**
-* Icons
-*/
-.icon {
-  > svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-
-    path {
-      fill: $grey-color;
-    }
   }
 }

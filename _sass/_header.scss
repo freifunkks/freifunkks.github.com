@@ -1,30 +1,23 @@
+@import "flexbox";
+
 header.site-header {
   margin-top: 16px;
   .wrapper {
     max-width: 960px;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    -webkit-flex-wrap: no-wrap;
-    flex-direction: row;
-    flex-wrap: no-wrap;
+
+    @include display-flex;
     .header-col-1.logo {
-      -webkit-order: 1;
-      order: 1;
       img {
         height: 225px;
       }
     }
     .header-col-2 {
-      -webkit-flex-grow: 1;
-      -webkit-order: 2;
-      flex-grow: 1;
-      order: 2;
+      @include flex(1);
+
       .social {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: flex-end;
-        justify-content: flex-end;
+        @include display-flex;
+        @include justify-content(flex-end);
+
         ul.social-media-list {
           list-style: none;
           margin: 0;
@@ -42,13 +35,9 @@ header.site-header {
       nav {
         display: block;
         ul.nav {
+          @include display-flex;
           list-style: none;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-flex-direction: row;
-          -webkit-flex-wrap: no-wrap;
-          flex-direction: row;
-          flex-wrap: no-wrap;
+
           li {
             background-color: $brand-color;
             border: 1px solid transparent;
@@ -59,10 +48,7 @@ header.site-header {
               border: 1px solid darken($brand-color, 10%);
             }
             display: inline-block;
-            -webkit-flex-grow: 1;
-            -webkit-order: 3;
-            flex-grow: 1;
-            order: 1;
+            @include flex(1);
             width: 100px;
             a {
               color: white;

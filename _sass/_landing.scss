@@ -1,0 +1,38 @@
+@import "flexbox";
+
+.start {
+  .line {
+    @include display-flex;
+
+    div {
+      margin: 0 8px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .video {
+      background: #ddd;
+      height: 300px;
+
+      @include flex(1);
+    }
+    .map {
+      background: #ddd;
+      height: 300px;
+
+      @include flex(1);
+    }
+    .learn {
+      @include flex(1);
+    }
+    .connect {
+      @include flex(1);
+    }
+    .contribute {
+      @include flex(1);
+    }
+  }
+}
