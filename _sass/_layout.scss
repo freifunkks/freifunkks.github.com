@@ -1,6 +1,6 @@
 /* Page content */
 .page-content {
-  padding: 16px 32px;
+  margin: 16px 0;
 }
 
 .post-list {
@@ -23,9 +23,7 @@
   font-size: 24px;
 }
 
-/**
- * Posts
- */
+/* Posts */
 .post-header {
   margin-bottom: $spacing-unit;
 }
