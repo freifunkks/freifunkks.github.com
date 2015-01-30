@@ -1,38 +1,22 @@
 @import "flexbox";
 
-.start {
-  .line {
-    @include display-flex;
+.line {
+  @include display-flex;
 
-    div {
-      margin: 0 8px;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-    .video {
-      background: #ddd;
-      height: 300px;
+  > div {
+    @include flex(1);
 
-      @include flex(1);
+    margin: 0 8px;
+    &:first-child {
+      margin-left: 0;
     }
-    .map {
-      background: #ddd;
-      height: 300px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
-      @include flex(1);
-    }
-    .learn {
-      @include flex(1);
-    }
-    .connect {
-      @include flex(1);
-    }
-    .contribute {
-      @include flex(1);
-    }
+  .video, .map {
+    background: #ddd;
+    height: 300px;
   }
 }

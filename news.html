@@ -4,37 +4,33 @@ title: News
 permalink: /news/
 ---
 
-<div class="home">
+<h1>Was gibts Neues?</h1>
 
-  <h1 class="page-heading">Was gibts Neues?</h1>
+<ul class="post-list">
+  {% for post in paginator.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+      <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+    </li>
+  {% endfor %}
+</ul>
 
-        <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-    {% else %}
-      <span class="previous">Neuere News</span>
-    {% endif %}
-    <span class="page-number">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% else %}
-      <span class="next">Ältere News</span>
-    {% endif %}
-  </div>
-
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Neuere News</span>
+  {% endif %}
+  <span class="page-number">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next">Ältere News</span>
+  {% endif %}
 </div>

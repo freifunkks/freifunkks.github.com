@@ -1,57 +1,43 @@
 <header class="site-header">
-  <div class="wrapper">
-    <div class="logo header-col-1">
-      <a href="/">
-        <img src="http://felix-moeller.net/f/logo-ks.svg" />
-      </a>
+  <div class="header-col-1">
+    <a href="/">
+      <img src="http://felix-moeller.net/f/logo-ks.svg" class="logo" />
+    </a>
+  </div>
+
+  <div class="header-col-2">
+    <div class="social">
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:{{ site.author.email }}">
+            <i class="fa fa-envelope"></i> {{ site.author.email }}
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/{{ site.author.github }}">
+            <i class="fa fa-github"></i> {{ site.author.github }}
+          </a>
+        </li>
+
+        <li>
+          <a href="https://twitter.com/{{ site.author.twitter }}">
+            <i class="fa fa-twtwtw"></i> {{ site.author.twitter }}
+          </a>
+        </li>
+
+        <li>
+          <a href="/feed.xml">
+            <i class="fa fa-rss"></i> Neuigkeiten
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <div class="header-col-2">
-      <div class="social">
-        <ul class="social-media-list">
-          <li>
-            <a href="mailto:{{ site.author.email }}">
-              <i class="fa fa-envelope"></i>
-              {{ site.author.email }}
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/{{ site.author.github }}">
-              <i class="fa fa-github"></i>
-              <span class="username">{{ site.author.github }}</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://twitter.com/{{ site.author.twitter }}">
-              <i class="fa fa-twtwtw"></i>
-              <span class="username">{{ site.author.twitter }}</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-              <i class="fa fa-rss"></i>
-              Neuigkeiten
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <nav class="site-nav">
-        <ul class="nav">
-          {% for page in site.nav_pages %}
-            {% if page.title %}
-              <li>
-                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-                  {{ page.title }}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </nav>
-    </div>
+    <nav class="site-nav">
+      {% for page in site.nav_pages %}
+        <a class="page-link" href="{{ page.url }}">{{ page.title }}</a>
+      {% endfor %}
+    </nav>
   </div>
 </header>
