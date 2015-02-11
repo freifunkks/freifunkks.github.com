@@ -7,6 +7,8 @@ author:
   github: freifunkks
   twitter: freifunkks
 
+permalink: /news/:title/
+
 nav_pages:
   - title: Info
     url: /info/
@@ -21,9 +23,6 @@ nav_pages:
 exclude: ["CNAME"]
 highlighter: pygments
 markdown: kramdown
-paginate: 5
-paginate_path: /news/page:num/
-permalink: /news/:title/
 sass:
   sass_dir: _sass
   style: :compressed

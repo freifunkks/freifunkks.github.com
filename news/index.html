@@ -7,7 +7,7 @@ permalink: /news/
 <h1>Was gibts Neues?</h1>
 
 <ul class="post-list">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
     <li>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -19,18 +19,3 @@ permalink: /news/
     </li>
   {% endfor %}
 </ul>
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Neuere News</span>
-  {% endif %}
-  <span class="page-number">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next">Ältere News</span>
-  {% endif %}
-</div>

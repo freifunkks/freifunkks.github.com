@@ -1,9 +1,0 @@
-@import "flexbox";
-
-.pagination {
-  @include display-flex;
-
-  .page-number {
-    text-align: center;
-  }
-}
