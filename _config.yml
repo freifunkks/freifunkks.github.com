@@ -10,13 +10,17 @@ author:
 permalink: /news/:title/
 
 nav_pages:
-  - title: Info
+  - id: info
+    title: Info
     url: /info/
-  - title: News
+  - id: news
+    title: News
     url: /news/
-  - title: Karte
+  - id: map
+    title: Karte
     url: /map/
-  - title: Über FFKS
+  - id: about
+    title: Über FFKS
     url: /about/
 
 # Build settings

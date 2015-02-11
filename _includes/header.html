@@ -1,43 +1,37 @@
 <header class="site-header">
-  <div class="header-col-1">
-    <a href="/">
-      <img src="/img/logo-ks.svg" class="logo" />
-    </a>
+  <div class="social">
+    <ul class="social-media-list">
+      <li>
+        <a href="mailto:{{ site.author.email }}">
+          <i class="fa fa-envelope"></i> {{ site.author.email }}
+        </a>
+      </li>
+
+      <li>
+        <a href="https://github.com/{{ site.author.github }}">
+          <i class="fa fa-github"></i> {{ site.author.github }}
+        </a>
+      </li>
+
+      <li>
+        <a href="https://twitter.com/{{ site.author.twitter }}">
+          <i class="fa fa-twitter"></i> {{ site.author.twitter }}
+        </a>
+      </li>
+
+      <li>
+        <a href="/feed.xml">
+          <i class="fa fa-rss"></i> Neuigkeiten
+        </a>
+      </li>
+    </ul>
   </div>
 
-  <div class="header-col-2">
-    <div class="social">
-      <ul class="social-media-list">
-        <li>
-          <a href="mailto:{{ site.author.email }}">
-            <i class="fa fa-envelope"></i> {{ site.author.email }}
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/{{ site.author.github }}">
-            <i class="fa fa-github"></i> {{ site.author.github }}
-          </a>
-        </li>
-
-        <li>
-          <a href="https://twitter.com/{{ site.author.twitter }}">
-            <i class="fa fa-twtwtw"></i> {{ site.author.twitter }}
-          </a>
-        </li>
-
-        <li>
-          <a href="/feed.xml">
-            <i class="fa fa-rss"></i> Neuigkeiten
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <nav class="site-nav">
-      {% for page in site.nav_pages %}
-        <a class="page-link" href="{{ page.url }}">{{ page.title }}</a>
-      {% endfor %}
-    </nav>
-  </div>
+  <nav class="site-nav">
+    {% for nav_page in site.nav_pages %}
+      <a class="page-link {% if nav_page.id == page.nav_active %}active{% endif %}" href="{{ nav_page.url }}">
+        {{ nav_page.title }}
+      </a>
+    {% endfor %}
+  </nav>
 </header>

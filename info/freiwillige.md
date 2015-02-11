@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: page
 title: Freiwillige
-permalink: /info/freiwillige.html
+nav_active: info
+permalink: /info/freiwillige/
 ---
 
 # Wer macht mit bei Freifunk Kassel
+
 * Herr Foo Bar

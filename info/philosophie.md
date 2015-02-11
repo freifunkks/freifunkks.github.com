@@ -1,14 +1,12 @@
 ---
-layout: default
+layout: page
 title: Philosophie
-permalink: /info/philosophie.html
+nav_active: info
+permalink: /info/philosophie/
 ---
 
 # Philosophie
 
 ## Offenes Netzwerk
 
-
 ## Kommerzielle Interessen
-
-

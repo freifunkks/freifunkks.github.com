@@ -1,67 +1,23 @@
-/* Page content */
+@import "flexbox";
+
+/* Wrapper */
+.wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+/* Page wrap */
+.page-wrap {
+  @include display-flex;
+
+  .page-content {
+    margin-left: 32px;
+  }
+}
+
 .page-content {
-  margin: 16px 0;
-}
-
-.post-list {
-  margin-left: 0;
-  padding: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
-}
-
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
-
-.post-link {
-  display: block;
-  font-size: 24px;
-}
-
-/* Posts */
-.post-header {
-  margin-bottom: $spacing-unit;
-}
-
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1;
-
-  @include media-query($on-laptop) {
-    font-size: 36px;
-  }
-}
-
-.post-content {
-  margin-bottom: $spacing-unit;
-
-  h2 {
-    font-size: 32px;
-
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
-  }
-
-  h3 {
-    font-size: 26px;
-
-    @include media-query($on-laptop) {
-      font-size: 22px;
-    }
-  }
-
-  h4 {
-    font-size: 20px;
-
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
+  p {
+    padding-left: 16px;
   }
 }

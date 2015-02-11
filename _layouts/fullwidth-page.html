@@ -2,7 +2,10 @@
 layout: skel
 ---
 <div class="wrapper">
-  {% include header.html %}
+  <div class="header-wrap">
+    {% include logo.html %}
+    {% include header.html %}
+  </div>
 
   <div class="page-content">
     {{ content }}

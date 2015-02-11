@@ -1,0 +1,23 @@
+$base-font-family: "OpenSans";
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+
+$freifunk-yellow:  #ffb400;
+$freifunk-magenta: #dc0067;
+$freifunk-blue:    #009ee0;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    960px;
+
+// Responsive stuff - TODO
+$break-tiny:   0px;
+$break-small:  0px;
+$break-medium: 980px;
