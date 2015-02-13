@@ -12,4 +12,4 @@ Wir freuen uns über jeden, der sich daran beteiligen will.
 
 Auf dieser Karte siehst du die Knotenpunkte, die in Kassel und Umgebung bereits verfügbar sind.
 
-<iframe height="600" width="100%" src="http://map.ffks.de"></iframe>
+<iframe src="http://map.ffks.de" class="map-page-iframe"></iframe>

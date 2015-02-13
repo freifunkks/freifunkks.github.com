@@ -59,8 +59,11 @@ iframe {
 }
 
 /* Misc */
-.map {
+.map-page-iframe {
   margin-top: 32px;
+
+  height: 600px;
+  width: 100%;
 }
 
 .flex-grow {
