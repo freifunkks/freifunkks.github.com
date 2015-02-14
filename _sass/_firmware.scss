@@ -1,0 +1,83 @@
+@import "flexbox", "variables";
+
+.vendor, .device {
+  display: none;
+}
+
+.vendor + label {
+  display: block;
+
+  margin-bottom: 16px;
+  padding: 6px 12px;
+
+  font: {
+    weight: 300;
+    size: 20px;
+  }
+
+  color: #fff;
+  background-color: $freifunk-magenta;
+  cursor: pointer;
+  transition: background-color .4s;
+
+  &:hover {
+    background-color: $freifunk-yellow;
+  }
+}
+
+.vendor:checked + label {
+  background-color: $freifunk-yellow;
+}
+
+.device-list {
+  display: none;
+  padding-bottom: 8px;
+}
+
+.vendor:checked + label + .device-list {
+  @include display-flex;
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+}
+
+.device + label {
+  display: block;
+  width: 320px;
+
+  margin-bottom: 16px;
+  padding: 24px;
+
+  cursor: pointer;
+  color: #fff;
+  background-color: #aaa;
+  transition: background-color .4s;
+
+  &:hover {
+    background-color: #777;
+  }
+}
+
+.device:checked + label {
+  background-color: #777;
+}
+
+.download-button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 0 none;
+
+  padding: 16px 24px;
+
+  font: {
+    weight: 300;
+    size: 20px;
+  }
+
+  color: #fff;
+  background-color: $freifunk-blue;
+  transition: background-color .4s;
+
+  &:hover {
+    background-color: darken($freifunk-blue, 10%);
+  }
+}

@@ -1,0 +1,25 @@
+---
+layout: page
+title: Firmware Download
+permalink: /firmware/
+---
+
+<h1>{{ page.title }}</h1>
+<form>
+  {% for vendor in site.data.firmware.vendors %}
+    <input type="radio" name="vendor" class="vendor" id="vendor-{{ vendor.id }}" />
+    <label for="vendor-{{ vendor.id }}">{{ vendor.name }}</label>
+    <div class="device-list">
+      {% for device in vendor.devices %}
+        <input type="radio" name="{{ vendor.id }}-device" class="device" id="device-{{ vendor.id }}-{{ device.id }}" />
+        <label for="device-{{ vendor.id }}-{{ device.id }}">
+          {{ device.name }}
+          <!-- TODO: different device versions -->
+        </label>
+      {% endfor %}
+    </div>
+  {% endfor %}
+  {% for channel in site.data.firmware.channels %}
+    <button type="submit" class="download-button">{{ channel.name }} herunterladen</button>
+  {% endfor %}
+</form>
