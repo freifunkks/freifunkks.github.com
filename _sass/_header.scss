@@ -52,6 +52,8 @@
     weight: 300;
   }
 
+  transition: background-color .4s;
+
   &:hover {
     background-color: $freifunk-yellow;
     text-decoration: none;

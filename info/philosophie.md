@@ -5,7 +5,7 @@ nav_active: info
 permalink: /info/philosophie/
 ---
 
-# Philosophie
+# {{ page.title }}
 
 ## Offenes Netzwerk
 

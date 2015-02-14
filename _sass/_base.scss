@@ -41,7 +41,7 @@ h1:not(:first-child) {
 a {
   color: $freifunk-magenta;
   text-decoration: none;
-  transition:All 0.4s ease;
+  transition: color .4s;
 
   &:visited {
     color: darken($freifunk-magenta, 15%);
