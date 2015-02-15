@@ -1,5 +1,13 @@
 @import "flexbox", "variables";
 
+// fixed heights are the only working option to do
+// good slideUp / slideDown transitions without JS
+$height-buffalo:  84px;
+$height-dlink:    84px;
+$height-linksys:  84px;
+$height-tplink:   1008px;
+$height-ubiquiti: 168px;
+
 .vendor, .device {
   display: none;
 }
@@ -30,19 +38,39 @@
 }
 
 .device-list {
-  display: none;
-  padding-bottom: 8px;
-}
-
-.vendor:checked + label + .device-list {
   @include display-flex;
   @include justify-content(space-between);
   @include flex-wrap(wrap);
+
+  height: 0;
+  overflow-y: hidden;
+
+  transition: height .4s;
+}
+
+#vendor-buffalo:checked + label + .device-list {
+  height: $height-buffalo;
+}
+
+#vendor-dlink:checked + label + .device-list {
+  height: $height-dlink;
+}
+
+#vendor-linksys:checked + label + .device-list {
+  height: $height-linksys;
+}
+
+#vendor-tplink:checked + label + .device-list {
+  height: $height-tplink;
+}
+
+#vendor-ubiquiti:checked + label + .device-list {
+  height: $height-ubiquiti;
 }
 
 .device + label {
   display: block;
-  width: 320px;
+  width: 340px;
 
   margin-bottom: 16px;
   padding: 24px;
@@ -66,6 +94,7 @@
   -webkit-appearance: none;
   border: 0 none;
 
+  margin-top: 16px;
   padding: 16px 24px;
 
   font: {
