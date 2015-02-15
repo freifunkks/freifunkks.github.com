@@ -1,12 +1,21 @@
 @import "flexbox";
 
+$headerHeight:    232px;
+$headerTopMargin: 16px;
+$navHeight:       34px;
+
 .header-wrap {
   @include display-flex;
 }
 
 .site-header {
   @include flex(1);
-  margin: 16px 0 0 32px;
+
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  height: $headerHeight;
+  margin: $headerTopMargin 0 0 32px;
 
   .social {
     @include display-flex;
@@ -19,30 +28,24 @@
     padding: 0;
 
     li {
-      padding: 8px 0;
-    }
-
-    a, a:hover {
-      color: $freifunk-magenta;
+      margin: 16px 0;
     }
   }
 }
 
 .logo {
-  height: 225px;
-  margin-top: 16px;
+  height: $headerHeight;
+  margin-top: $headerTopMargin;
 }
 
 .site-nav {
   @include display-flex;
-
-  margin: 28px 0 0;
+  height: $navHeight;
 }
 
 .page-link {
   display: block;
   @include flex(1);
-  padding: 6px 16px;
 
   color: white !important;
   background-color: $freifunk-magenta;
@@ -51,6 +54,7 @@
     size: 20px;
     weight: 300;
   }
+  line-height: $navHeight;
 
   transition: background-color .4s;
 
