@@ -5,13 +5,13 @@ permalink: /firmware/
 ---
 
 <h1>{{ page.title }}</h1>
-<form>
+<form action="/download/">
   {% for vendor in site.data.firmware.vendors %}
-    <input type="radio" name="vendor" class="vendor" id="vendor-{{ vendor.id }}" />
+    <input type="radio" name="vendor" value="{{ vendor.id }}" class="vendor" id="vendor-{{ vendor.id }}" />
     <label for="vendor-{{ vendor.id }}">{{ vendor.name }}</label>
     <div class="device-list">
       {% for device in vendor.devices %}
-        <input type="radio" name="{{ vendor.id }}-device" class="device" id="device-{{ vendor.id }}-{{ device.id }}" />
+        <input type="radio" name="device" value="{{ device.id }}" class="device" id="device-{{ vendor.id }}-{{ device.id }}" />
         <label for="device-{{ vendor.id }}-{{ device.id }}">
           {{ device.name }}
           <!-- TODO: different device versions -->

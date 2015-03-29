@@ -52,7 +52,7 @@ $height-ubiquiti: 168px;
   height: $height-buffalo;
 }
 
-#vendor-dlink:checked + label + .device-list {
+#vendor-d-link:checked + label + .device-list {
   height: $height-dlink;
 }
 
@@ -60,7 +60,7 @@ $height-ubiquiti: 168px;
   height: $height-linksys;
 }
 
-#vendor-tplink:checked + label + .device-list {
+#vendor-tp-link:checked + label + .device-list {
   height: $height-tplink;
 }
 

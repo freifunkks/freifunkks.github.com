@@ -7,7 +7,7 @@
     - id: wzr-hp-g450h
       name: WZR-HP-G450H
 
-- id: dlink
+- id: d-link
   name: D-Link
   devices:
     - id: dir-825
@@ -22,7 +22,7 @@
     - id: wrt160nl
       name: WRT160NL
 
-- id: tplink
+- id: tp-link
   name: TP-Link
   devices:
     - id: cpe210-v1.0
