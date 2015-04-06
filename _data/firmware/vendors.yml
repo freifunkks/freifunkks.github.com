@@ -25,140 +25,134 @@
 - id: tp-link
   name: TP-Link
   devices:
-    - id: cpe210-v1.0
-      name: CPE210 v1.0
+    - id: cpe210
+      name: CPE210
+      versions:
+        - id: v1.0
 
-    - id: cpe220-v1.0
-      name: CPE220 v1.0
+    - id: cpe220
+      name: CPE220
+      versions:
+        - id: v1.0
 
-    - id: cpe510-v1.0
-      name: CPE510 v1.0
+    - id: cpe510
+      name: CPE510
+      versions:
+        - id: v1.0
 
-    - id: cpe520-v1.0
-      name: CPE520 v1.0
+    - id: cpe520
+      name: CPE520
+      versions:
+        - id: v1.0
 
-    - id: tl-mr3020-v1
-      name: TL-MR3020 v1
+    - id: tl-mr3020
+      name: TL-MR3020
+      versions:
+        - id: v1
 
     - id: tl-mr3040
       name: TL-MR3040
       versions:
         - id: v1
-          name: v1
-
         - id: v2
-          name: v2
 
-    - id: tl-mr3220-v1
-      name: TL-MR3220 v1
+    - id: tl-mr3220
+      name: TL-MR3220
+      versions:
+        - id: v1
 
     - id: tl-mr3420
       name: TL-MR3420
       versions:
         - id: v1
-          name: v1
-
         - id: v2
-          name: v2
 
-    - id: tl-wa750re-v1
-      name: TL-WA750RE v1
+    - id: tl-wa750re
+      name: TL-WA750RE
+      versions:
+        - id: v1
 
-    - id: tl-wa801n-nd-v2
-      name: TL-WA801N(D) v2
+    - id: tl-wa801n-nd
+      name: TL-WA801N(D)
+      versions:
+        - id: v2
 
-    - id: tl-wa850re-v1
-      name: TL-WA850RE v1
+    - id: tl-wa850re
+      name: TL-WA850RE
+      versions:
+        - id: v1
 
-    - id: tl-wa901n-nd-v2
-      name: TL-WA901N(D) v2
+    - id: tl-wa901n-nd
+      name: TL-WA901N(D)
+      versions:
+        - id: v2
 
-    - id: tl-wdr3500-v1
-      name: TL-WDR3500 v1
+    - id: tl-wdr3500
+      name: TL-WDR3500
+      versions:
+        - id: v1
 
-    - id: tl-wdr3600-v1
-      name: TL-WDR3600 v1
+    - id: tl-wdr3600
+      name: TL-WDR3600
+      versions:
+        - id: v1
 
-    - id: tl-wdr4300-v1
-      name: TL-WDR4300 v1
+    - id: tl-wdr4300
+      name: TL-WDR4300
+      versions:
+        - id: v1
 
     - id: tl-wr1043n-nd
       name: TL-WR1043N(D)
       versions:
         - id: v1
-          name: v1
-
         - id: v2
-          name: v2
 
-    - id: tl-wr703n-v1
-      name: TL-WR703N v1
+    - id: tl-wr703n
+      name: TL-WR703N
+      versions:
+        - id: v1
 
-    - id: tl-wr710n-v1
-      name: TL-WR710N v1
+    - id: tl-wr710n
+      name: TL-WR710N
+      versions:
+        - id: v1
 
     - id: tl-wr740n-nd
       name: TL-WR740N(D)
       versions:
         - id: v1
-          name: v1
-
         - id: v3
-          name: v3
-
         - id: v4
-          name: v4
 
     - id: tl-wr741n-nd
       name: TL-WR741N(D)
       versions:
         - id: v1
-          name: v1
-
         - id: v2
-          name: v2
-
         - id: v4
-          name: v4
 
     - id: tl-wr841n-nd
       name: TL-WR841N(D)
       versions:
         - id: v3
-          name: v3
-
         - id: v5
-          name: v5
-
         - id: v7
-          name: v7
-
         - id: v8
-          name: v8
-
         - id: v9
-          name: v9
 
     - id: tl-wr842n-nd
       name: TL-WR842N(D)
       versions:
         - id: v1
-          name: v1
-
         - id: v2
-          name: v2
 
     - id: tl-wr941n-nd
       name: TL-WR941N(D)
       versions:
         - id: v2
-          name: v2
-
         - id: v3
-          name: v3
-
         - id: v4
-          name: v4
 
 - id: ubiquiti
   name: Ubiquiti
