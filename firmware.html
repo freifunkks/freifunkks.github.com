@@ -5,6 +5,8 @@ permalink: /firmware/
 ---
 
 <h1>{{ page.title }}</h1>
+<p>Hier kannst du die aktuelle Freifunk Kassel Firmware herunterladen. Diese benötigst du, um einen neuen Router mit ins Freifunk-Netzwerk einzuhängen. Falls du nicht weisst, wie das ganze passiert, kannst du dir <a href="/tutorial/">in unserem Tutorial Hilfe holfen</a>.</p>
+<p>Diese Seite befindet sich noch in der Überarbeitung. Sollte mal ein Link nicht funktionieren, kannst du dir <a href="http://dl.ffks.de/images/stable/factory/">auf dieser Seite</a> die Firmware zu deinem Router-Modell manuell aussuchen.</p>
 <form action="/download/">
   {% for vendor in site.data.firmware.vendors %}
     <input type="radio" name="vendor" value="{{ vendor.id }}" class="vendor" id="vendor-{{ vendor.id }}" />

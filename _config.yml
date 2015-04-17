@@ -16,6 +16,9 @@ nav_pages:
   - id: news
     title: News
     url: /news/
+  - id: firmware
+    title: Firmware
+    url: /firmware/
   - id: map
     title: Karte
     url: /map/
