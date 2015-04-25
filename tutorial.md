@@ -7,14 +7,13 @@ permalink: /tutorial/
 
 # Einrichten eines TL-WR841N(D)
 
-Dieses Tutorial soll Dir erklären, wie du einen TP-Link Router des Typs TL-WR841N(D) einrichtest, um ihn für den Freifunk zu nutzen.
+Dieses Tutorial soll Dir erklären, wie du einen TP-Link Router des Typs [TL-WR841N(D)](http://www.tp-link.de/products/details/?model=TL-WR841N) einrichtest, um ihn für den Freifunk zu nutzen.
 
  0. Herausfinden welche Router-Version vorhanden ist.
- 1. Aktuelle Kasseler Freifunk Firmware herunterladen:
-    http://dl.ffks.de/images/stable/factory/gluon-ffks-2015.02.07.11-tp-link-tl-wr841n-nd-v9.bin
+ 1. [Aktuelle Kasseler Freifunk Firmware herunterladen](http://dl.ffks.de/images/stable/factory/gluon-ffks-2015.02.07.11-tp-link-tl-wr841n-nd-v9.bin)
  
  2. GEO-Koordinaten des geplanten Router-Standortes herausfinden
-    * Dazu http://map.ffks.de/ im Browser aufrufen
+    * Dazu [http://map.ffks.de/](http://map.ffks.de/) im Browser aufrufen
     * "Koordinaten beim nächsten Klick anzeigen" klicken.
     * In der Karte auf den geplanten Standort klicken und die angezeigten Koordinaten notieren (z.B. "51.312711, 9.479746")
  
@@ -27,7 +26,7 @@ Dieses Tutorial soll Dir erklären, wie du einen TP-Link Router des Typs TL-WR84
  4. In der Adressleiste des Browsers (z.B. Firefox) die IP-Adresse für Routerkonfigurationen eingeben: http://192.168.0.1/
  
     ![ XXXX ]({{ site.url }}/img/tutorial/04_routerkonfig.png)
- 7. "Browse" klicken und die heruntergeladene Freifunk Firmware (.bin Datei) im Download Ordner auswählen.
+ 7. Im Menü links denk Punkt "System Tools" anwählen und anschließend "Browse" klicken um die heruntergeladene Freifunk Firmware (.bin Datei) im Download Ordner auszuwählen.
  
     ![ XXXX ]({{ site.url }}/img/tutorial/06_System_Tools_Browse.png)
  
@@ -51,7 +50,7 @@ Dieses Tutorial soll Dir erklären, wie du einen TP-Link Router des Typs TL-WR84
 10. LAN-Kabel trennen, fünf Sekunden warten und wieder neu einstecken.
 
 
-11. Neu geflashten Freifunk-Router im Browser unter neuer IP-Adresse aufrufen: http://192.168.1.1/ 
+11. Neu geflashten Freifunk-Router im Browser unter neuer IP-Adresse aufrufen: http://192.168.1.1/ (Falls die Seite nicht lädt ggf. Router erneut neustarten bzw. LAN-Kabel neu einstecken.)
 
     ![ XXXX ]({{ site.url }}/img/tutorial/11_ff-routerkonfig.png)
 
@@ -62,12 +61,12 @@ Dieses Tutorial soll Dir erklären, wie du einen TP-Link Router des Typs TL-WR84
 
     ![ XXXX ]({{ site.url }}/img/tutorial/12a_FF-Name.png)
 
-    - VPN anhaken, wenn du den Knoten an das Internet anschließen willst. Dann festlegen wieviel von deiner Internet-Bandbreite Du für die öffentliche Nutzung freigeben willst.
+    - VPN auswählen, wenn du den Knoten an das Internet anschließen willst. Dann festlegen wieviel von deiner Internet-Bandbreite Du für die öffentliche Nutzung freigeben willst.
 
     ![ XXXX ]({{ site.url }}/img/tutorial/12b_FF-VPN.png)
 
 
-    - "Knoten auf der Karte anzeigen" anhaken und dort die zuvor notierten GEO-Koordinaten (siehe 2.) eintragen.
+    - "Knoten auf der Karte anzeigen" auswählen und dort die zuvor notierten GEO-Koordinaten (siehe 2.) eintragen.
 
 
     ![ XXXX ]({{ site.url }}/img/tutorial/12c_FF-Karte.png)
