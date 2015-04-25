@@ -7,7 +7,7 @@ permalink: /tutorial/
 
 # Einrichten eines TL-WR841N(D)
 
-Dieses Tutorial soll Dir erklären, wie du einen TP-Link Router des Typs [TL-WR841N(D)](http://www.tp-link.de/products/details/?model=TL-WR841N) einrichtest, um ihn für den Freifunk zu nutzen.
+Dieses Tutorial soll Dir erklären, wie du einen TP-Link Router des Typs [TL-WR841N(D)](http://www.tp-link.de/products/details/?model=TL-WR841N) einrichtest, um ihn für den Freifunk zu nutzen. Dieses Modell ist eine gute Wahl für Einsteiger, da relativ günstig (ca. 15€) und einfach einzurichten.
 
  0. Herausfinden welche Router-Version vorhanden ist.
  1. [Aktuelle Kasseler Freifunk Firmware herunterladen](http://dl.ffks.de/images/stable/factory/gluon-ffks-2015.02.07.11-tp-link-tl-wr841n-nd-v9.bin)
@@ -25,32 +25,32 @@ Dieses Tutorial soll Dir erklären, wie du einen TP-Link Router des Typs [TL-WR8
  
  4. In der Adressleiste des Browsers (z.B. Firefox) die IP-Adresse für Routerkonfigurationen eingeben: http://192.168.0.1/
  
-    ![ XXXX ]({{ site.url }}/img/tutorial/04_routerkonfig.png)
- 7. Im Menü links denk Punkt "System Tools" anwählen und anschließend "Browse" klicken um die heruntergeladene Freifunk Firmware (.bin Datei) im Download Ordner auszuwählen.
+    ![ XXXX ]({{ site.url }}/img/tutorial/04_router_config.png)
+ 7. Im Menü links den Punkt "System Tools" anwählen und anschließend unter "Firmware Upgrade" "Browse" klicken um die heruntergeladene Freifunk Firmware (.bin Datei) im Download Ordner auszuwählen.
  
-    ![ XXXX ]({{ site.url }}/img/tutorial/06_System_Tools_Browse.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/06_system_tools_browse.png)
  
  8. "Upgrade" klicken und Neustart abwarten, bis der Browser "Verbindung nicht möglich" oder Ähnliches zeigt.
     (Achtung: Während des Vorgangs auf keinen Fall die Stromzufuhr unterbrechen!)
  
  
-    ![ XXXX ]({{ site.url }}/img/tutorial/07a_Firmware_Upgrade.png)
-    ![ XXXX ]({{ site.url }}/img/tutorial/07b_Firmware_Upgrade_processing.png)
-    ![ XXXX ]({{ site.url }}/img/tutorial/07c_Firmware_Upgrade_restart.png)
-    ![ XXXX ]({{ site.url }}/img/tutorial/07d_Firmware_Upgrade_success.png)
-    ![ XXXX ]({{ site.url }}/img/tutorial/07e_Unable_to_connect.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/07a_firmware_upgrade.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/07b_firmware_upgrade_processing.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/07c_firmware_upgrade_restart.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/07d_firmware_upgrade_success.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/07e_unable_to_connect.png)
  
  8. Nach einer Minute Resetknopf am Router drücken und warten bis Schloss-Symbol am Router blinkt.
  
-    ![ XXXX ]({{ site.url }}/img/tutorial/08a_Router_Back_Reset.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/08a_router_back_reset.png)
  
-    ![ XXXX ]({{ site.url }}/img/tutorial/08b_Schlosssymbol.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/08b_schlosssymbol.png)
  
  
 10. LAN-Kabel trennen, fünf Sekunden warten und wieder neu einstecken.
 
 
-11. Neu geflashten Freifunk-Router im Browser unter neuer IP-Adresse aufrufen: http://192.168.1.1/ (Falls die Seite nicht lädt ggf. Router erneut neustarten bzw. LAN-Kabel neu einstecken.)
+11. Neu geflashten Freifunk-Router im Browser unter neuer IP-Adresse aufrufen: http://192.168.1.1/ (Falls die Seite nicht lädt ggf. Router erneut neustarten bzw. LAN-Kabel neu einstecken und alle anderen Netzwerkverbindungen trennen.)
 
     ![ XXXX ]({{ site.url }}/img/tutorial/11_ff-routerkonfig.png)
 
@@ -59,21 +59,21 @@ Dieses Tutorial soll Dir erklären, wie du einen TP-Link Router des Typs [TL-WR8
     - Name des Freifunkknotens (z.B. ffks-DEINNEUERNAME)
 
 
-    ![ XXXX ]({{ site.url }}/img/tutorial/12a_FF-Name.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/12a_ff-name.png)
 
     - VPN auswählen, wenn du den Knoten an das Internet anschließen willst. Dann festlegen wieviel von deiner Internet-Bandbreite Du für die öffentliche Nutzung freigeben willst.
 
-    ![ XXXX ]({{ site.url }}/img/tutorial/12b_FF-VPN.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/12b_ff-vpn.png)
 
 
     - "Knoten auf der Karte anzeigen" auswählen und dort die zuvor notierten GEO-Koordinaten (siehe 2.) eintragen.
 
 
-    ![ XXXX ]({{ site.url }}/img/tutorial/12c_FF-Karte.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/12c_ff-karte.png)
 
     - Unter Kontakt z.B. eine E-Mail oder Telefonnummer angeben, damit Du bei Störungen Hilfe bekommen kannst.
 
-    ![ XXXX ]({{ site.url }}/img/tutorial/12d_FF-Kontakt.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/12d_ff-kontakt.png)
 
 
     Danach "Speichern und Neustarten" klicken.
@@ -88,7 +88,7 @@ Dieses Tutorial soll Dir erklären, wie du einen TP-Link Router des Typs [TL-WR8
 
 15. Um den Freifunk-Router als Internet-Uplink über VPN zu verbinden, muss Du das LAN-Kabel nun vom WAN-Port (!) des FF-Routers mit dem hauseigenen Internetzugang (z.B. EasyBox von Vodafone) verbinden.
 
-    ![ XXXX ]({{ site.url }}/img/tutorial/15_Internet.png)
+    ![ XXXX ]({{ site.url }}/img/tutorial/15_internet.png)
 
 16. Herzlichen Glückwunsch! Jeder in der Nähe kann sich jetzt mit dem neuen WLAN-Netz kassel.freifunk.net verbinden. Alternativ können Geräte (z.B. Desktop-PC) auch ohne Funk direkt an den LAN-Ports 1-4 angeschlossen werden.
 
