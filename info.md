@@ -12,7 +12,10 @@ Hierzu kommunizieren die Router untereinander, um eine größtmögliche Fläche 
 Einige Router stellen eine Verbindung zum Internet her, dadurch kann dieses [Mesh-Netzwerk](/info/mesh-netzwerk/) auch nach außen senden.
 So können Teilnehmer innerhalb des Kasseler Freifunk-Netzwerkes miteinander chatten, telefonieren oder Spiele spielen.
 
-Eine Besonderheit bei Freifunk ist, dass allen Menschen ein [offenes](/info/philosophie/) Netzwerk zur Verfügung steht.
+<!-- (Link entfernt, weil die verlinkte Seite noch keinen Inhalt hat) -->
+<!-- [offenes](/info/philosophie/) -->
+
+Eine Besonderheit bei Freifunk ist, dass allen Menschen ein offenes Netzwerk zur Verfügung steht.
 Jeder kann sich also mit seinem Smartphone, Notebook etc. anmelden und ein Teil des Netzwerkes sein.
 Der Zugang zum Netzwerk ist jedem erlaubt, es wird kein Passwort oder Geheimwissen verlangt.
 
