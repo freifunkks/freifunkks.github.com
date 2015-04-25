@@ -14,11 +14,19 @@ permalink: /firmware/
     <label for="vendor-{{ vendor.id }}">{{ vendor.name }}</label>
     <div class="device-list">
       {% for device in vendor.devices %}
-        <input type="radio" name="device" value="{{ device.id }}" class="device" id="device-{{ vendor.id }}-{{ device.id }}" />
-        <label for="device-{{ vendor.id }}-{{ device.id }}">
-          {{ device.name }}
-          <!-- TODO: different device versions -->
-        </label>
+        <div class="device-wrap">
+          <input type="radio" name="device" value="{{ device.id }}" class="device" id="device-{{ vendor.id }}-{{ device.id }}" />
+          <label for="device-{{ vendor.id }}-{{ device.id }}">
+            {{ device.name }}
+          </label>
+            <div class="versions">
+              {% for version in device.versions %}
+                {% capture versionLabel %}{% if version.name %}{{ version.name }}{% else %}{{ version.id }}{% endif %}{% endcapture %}
+                <input type="radio" name="version" value="{{ version.id }}" class="version" id="version-{{ vendor.id }}-{{ device.id }}-{{ version.id }}" />
+                <label for="version-{{ vendor.id }}-{{ device.id }}-{{ version.id }}">{{ versionLabel }}</label>
+              {% endfor %}
+            </div>
+          </div>
       {% endfor %}
     </div>
   {% endfor %}

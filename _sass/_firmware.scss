@@ -8,13 +8,19 @@ $height-linksys:  84px;
 $height-tplink:   1008px;
 $height-ubiquiti: 168px;
 
-.vendor, .device {
+.vendor,
+.device,
+.version {
   display: none;
+
+  & + label {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+  }
 }
 
 .vendor + label {
-  display: block;
-
   margin-bottom: 16px;
   padding: 6px 12px;
 
@@ -23,9 +29,7 @@ $height-ubiquiti: 168px;
     size: 20px;
   }
 
-  color: #fff;
   background-color: $freifunk-magenta;
-  cursor: pointer;
   transition: background-color .4s;
 
   &:hover {
@@ -68,15 +72,17 @@ $height-ubiquiti: 168px;
   height: $height-ubiquiti;
 }
 
+.device-wrap {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
 .device + label {
-  display: block;
   width: 340px;
 
-  margin-bottom: 16px;
   padding: 24px;
 
-  cursor: pointer;
-  color: #fff;
   background-color: #aaa;
   transition: background-color .4s;
 
@@ -87,6 +93,33 @@ $height-ubiquiti: 168px;
 
 .device:checked + label {
   background-color: #777;
+}
+
+.versions {
+  @include display-flex;
+  @include align-items(flex-start);
+
+  position: absolute;
+  right: 8px;
+
+  top: -30px;
+  transition: top .4s;
+}
+
+.device:checked ~ .versions {
+  top: 8px;
+}
+
+.version + label {
+  margin-left: 8px;
+  padding: 3px 6px;
+
+  background-color: #aaa;
+  transition: background-color .4s;
+}
+
+.version:checked + label {
+  background-color: $freifunk-blue;
 }
 
 .download-button {
